@@ -1,27 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html,
+body,
+:root{
+  height: 100%;
+  color-scheme: light;
+}
+.icon-container {
+  background: linear-gradient(to right, #ff00cc, #3333cc); /* Cambia los colores según tus preferencias */
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.gradient-icon {
+  color: transparent;
+  background: linear-gradient(to right, #ff00cc, #3333cc);
+  background-clip: text; /* Esta línea es suficiente para navegadores modernos */
+  -webkit-background-clip: text; /* Agrega también la propiedad con prefijo para compatibilidad con WebKit */
+  display: inline-block;
+}
+body{
+  @media (min-width: 1800px) {
+    overflow-x: hidden;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
