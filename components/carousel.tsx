@@ -12,15 +12,23 @@ import carousel4 from "@/assets/images/carousel4.webp";
 import carousel5 from "@/assets/images/carousel5.webp";
 import carousel6 from "@/assets/images/carousel6.webp";
 
+interface SimpleSliderProps{
+    mobile?:boolean;
+}
 
 
-export default class SimpleSlider extends Component {
-    render() {
+
+    const SimpleSlider:React.FC<SimpleSliderProps> = ({
+        mobile
+    }) => {
+
+        let numberSl = mobile?1:3
+
         const settings = {
             dots:true,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: numberSl,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -83,4 +91,4 @@ export default class SimpleSlider extends Component {
             </div>
         );
     }
-}
+export default SimpleSlider;

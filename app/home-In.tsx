@@ -34,16 +34,18 @@ const HomeIn = () => {
 
 
     return (
-        <div id="Home">
+        <div id="Home" className="">
             <div className="flex flex-col space-y-10 xl:space-y-0 mt-32 lg:mx-14 xl:mx-0 xl:ml-16 lg:mt-[5.3rem]">
 
-                <div className="flex flex-col lg:flex-row mt-24 space-y-12 lg:space-y-0 md:items-center">
+                <div className="flex flex-col lg:flex-row mt-24 space-y-12 h-full lg:space-y-0">
 
                     <div className="lg:w-1/2 flex flex-col space-y-8 md:items-start md:pl-0 md:pr-10 md:mx-10 ">
                         <div className="w-full md:w-2/3 md:pl-0 pl-4">
+                            <div className="flex ">
                             <p className="md:text-[2rem] text-lg">
                                 More than a <strong className="text-primary font-normal">screen</strong>
                             </p>
+                            </div>
                             <p className="font-bold text-[3rem] md:text-[4.7rem] w-[25rem]">Make Your Phone Safer</p>
                             <hr className="border-t-[0.25rem] w-72 border-tertiary " />
                             <hr className="border-t-[0.25rem] w-72 border-primary " />
@@ -53,7 +55,7 @@ const HomeIn = () => {
                             This layer safeguards your screen from scratches, impacts, and daily wear and tear, all while
                             maintaining the crystal-clear visual experience you love.</p>
                     </div>
-                    <div className="lg:w-1/2 md:px-0 px-6 md:flex md:flex-col">
+                    <div className="relative lg:w-1/2 md:px-0 px-6 md:flex md:flex-col">
                         <CardElement image={imageCard} />
                     </div>
                 </div>

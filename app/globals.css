@@ -7,6 +7,9 @@ body,
   height: 100%;
   color-scheme: light;
 }
+html {
+  scroll-behavior: smooth;
+}
 .icon-container {
   background: linear-gradient(to right, #ff00cc, #3333cc); /* Cambia los colores según tus preferencias */
   display: inline-block;
@@ -23,7 +26,14 @@ body,
 }
 body{
   @media (min-width: 1800px) {
-    overflow-x: hidden;
+    overflow-x: hidden; 
   }
 
+}
+.other2xl{
+  @media (min-width: 1756px) {
+    .\33xl\:z-50 {
+        z-index: 50;
+    }
+}
 }

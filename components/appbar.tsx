@@ -23,10 +23,10 @@ export const Appbar = () => {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-white">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white ">
             <div className={isMobile ? 'block' : 'hidden'}>
                 <div className="container flex flex-col md:flex-row items-start md:ml-4 space-y-3 md:space-y-0 md:space-x-3">
-                    <Image src={InLogo} alt="adsaf"/>
+                    <Image src={InLogo} height={70} alt="adsaf"/>
                 </div>
             </div>
             <div className={isMobile ? 'hidden' : 'block'}>
@@ -34,8 +34,8 @@ export const Appbar = () => {
                     <Image src={InLogo} height={80} alt="adsaf"/>
                     <div className="space-x-20 text-[1.1rem] flex items-end font-extrabold">
                         <a href="#Home" className="text-black">HOME</a>
-                        <a href="#AboutUs" className="text-black">ABOUT US</a>
                         <a href="#AboutPrd" className="text-black">ABOUT THE PRODUCT</a>
+                        <a href="#AboutUs" className="text-black">ABOUT US</a>
                     </div>
                 </div>
             </div>

@@ -31,19 +31,12 @@ const AbtUs = () => {
 
     return (
         <div id="AboutUs" className="mb-40">
-            {/* Círculo pequeño */}
-            <div className="bg-white w-40 h-40 lg:absolute top-[240%] right-[40%] xl:flex hidden rounded-full shadow-gray-700 shadow-2xl">
-                {/* Contenido del círculo pequeño */}
-            </div>
-            {/* Círculo pequeño */}
-            <div className="bg-white w-40 h-40 lg:absolute top-[240%] -right-16 xl:flex hidden rounded-full shadow-gray-700 shadow-2xl">
-                {/* Contenido del círculo pequeño */}
-            </div>
-            <div className="flex flex-col space-y-10 xl:space-y-0 mt-32 lg:mx-14 xl:mx-0 xl:ml-16 lg:mt-[5.3rem]">
 
-                <div className="flex flex-col lg:flex-row mt-24 space-y-12 space-x-40 lg:space-y-0 md:items-center mb-10">
+            <div className="flex flex-col space-y-10 xl:space-y-0 md:mt-32 lg:mx-14 xl:mx-0 xl:ml-16 lg:mt-[5.3rem]">
 
-                    <div className="lg:w-1/2 flex flex-col py-10 md:items-start text-justify px-10  md:mx-10 rounded-[3rem] shadow-gray-900 shadow-2xl bg-white">
+                <div className="flex flex-col 2xl:flex-row mt-24 space-y-12 lg:space-x-40 lg:space-y-0 md:items-center mb-10">
+
+                    <div className="2xl:w-1/2 flex flex-col py-10 md:items-start text-justify px-10  md:mx-10 rounded-[3rem] shadow-gray-900 shadow-2xl bg-white">
                         <div className="w-full md:w-2/3 md:pl-0 pl-4 mb-3">
                             <h2 className="md:text-[1.3rem] text-lg font-bold ml-5">ABOUT US</h2>
                         </div>
@@ -78,8 +71,16 @@ const AbtUs = () => {
                                 e-commerce platform. . , Amazon.</p>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 md:px-0 px-6 md:flex md:flex-col">
-                        <CardElement image={imageCard} customSizeImg={740} className="rounded-bl-[5rem]" classImg="-mt-20" />
+                    <div className="relative lg:w-1/2 md:px-0 flex flex-col pt-20">
+                        {/* Círculo pequeño */}
+                        <div className="bg-white w-40 h-40 lg:absolute bottom-[50%] -left-16 xl:flex hidden rounded-full shadow-gray-700 shadow-2xl">
+                            {/* Contenido del círculo pequeño */}
+                        </div>
+                        {/* Círculo pequeño */}
+                        <div className="bg-white w-40 h-40 lg:absolute bottom-[50%] -right-16   xl:flex hidden rounded-full shadow-gray-700 shadow-2xl">
+                            {/* Contenido del círculo pequeño */}
+                        </div>
+                        <CardElement other={true} image={imageCard} customSizeImg={740} className="rounded-bl-[5rem] py-5 md:py-0 h-auto" classImg="-mt-20" />
                     </div>
                 </div>
             </div>
