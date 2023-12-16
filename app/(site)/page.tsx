@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
 
-    <div className="other2xl">
+    <div className="other2xl overflow-x-hidden">
       <div className="bg-primary z-30 lg:flex hidden flex-col space-y-8 items-center justify-center h-72 mt-40 w-16 rounded-e-3xl fixed left-0 top-44">
         <a href="https://www.facebook.com" target="_blank"><FaFacebookF className="text-white" size={40} /></a>
         <a href="https://www.instagram.com" target="_blank"><FaInstagram className="text-white" size={40} /></a>

@@ -23,7 +23,7 @@ export const Appbar = () => {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-white ">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white w-screen">
             <div className={isMobile ? 'block' : 'hidden'}>
                 <div className="container flex flex-col md:flex-row items-start md:ml-4 space-y-3 md:space-y-0 md:space-x-3">
                     <Image src={InLogo} height={70} alt="adsaf"/>
