@@ -30,7 +30,7 @@ const AbtUs = () => {
 
 
     return (
-        <div id="AboutUs" className="mb-40">
+        <div id="AboutUs" className="mb-10 md:mb-40">
 
             <div className="flex flex-col space-y-10 xl:space-y-0 lg:mx-14 xl:mx-0 xl:ml-16">
 
