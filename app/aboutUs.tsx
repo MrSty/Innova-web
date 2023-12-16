@@ -32,7 +32,7 @@ const AbtUs = () => {
     return (
         <div id="AboutUs" className="mb-40">
 
-            <div className="flex flex-col space-y-10 xl:space-y-0 md:mt-32 lg:mx-14 xl:mx-0 xl:ml-16 lg:mt-[5.3rem]">
+            <div className="flex flex-col space-y-10 xl:space-y-0 lg:mx-14 xl:mx-0 xl:ml-16">
 
                 <div className="flex flex-col 2xl:flex-row mt-24 space-y-12 lg:space-x-40 lg:space-y-0 md:items-center mb-10">
 

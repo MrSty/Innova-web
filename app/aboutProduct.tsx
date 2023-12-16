@@ -42,21 +42,28 @@ const AbtProduct = () => {
 
 
     return (
-        <div id="AboutPrd">
-            <div className="flex flex-col justify-end lg:h-screen space-y-10 xl:space-y-0 mt-32 lg:mx-14 xl:mx-0 xl:ml-16 lg:mt-[5.3rem]">
-                <div className="h-1/2 flex flex-col items-center justify-center">
+        <div id="AboutPrd" className="bg-tertiary relative overflow-hidden mt-20">
+            <div className="absolute bg-primary h-[35rem] w-[35rem] -bottom-40 -left-40 rounded-full opacity-70 blur-3xl">
+
+            </div>
+            <div className="absolute bg-primary h-[30rem] w-[30rem] -top-40 -right-40 rounded-full opacity-70 blur-3xl">
+
+            </div>
+            <div className="flex flex-col justify-end lg:h-screen space-y-10 xl:space-y-0 lg:mx-14 xl:mx-0 xl:ml-16">
+                <div className="h-1/2 flex flex-col items-center justify-center mt-14">
                     <div className="w-[70%] lg:w-[90%]">
                         <SimpleSlider mobile={isMobile}/>
                     </div>
 
                 </div>
-                <motion.div 
-                ref={ref}
-                initial={{scale:1.3}}
-                animate={inView ? { scale: 1 } : { scale: 0.9}}
-                transition={{ duration: 0.5, ease: "easeInOut" }}        
-                className="h-1/3 flex flex-col lg:items-center lg:justify-center">
-                    <div className="md:ml-[7rem] md:w-[80%] 2xl:w-[45%] rounded-[4rem] bg-white shadow-gray-500 shadow-xl py-10 px-10 flex flex-col space-y-5">
+                <div    
+                className="h-1/2 flex py-10 md:py-0 z-40 flex-col lg:items-center lg:justify-center">
+                    <motion.div 
+                    ref={ref}
+                    initial={{scale:1.3}}
+                    animate={inView ? { scale: 1 } : { scale: 0.9}}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}     
+                    className="md:ml-[7rem] md:w-[80%] 2xl:w-[45%] rounded-[4rem] bg-white shadow-gray-500 shadow-xl py-10 px-10 flex flex-col space-y-5">
                         <h2 className="text-[1.3rem] font-bold">ABOUT THE PRODUCT</h2>
                         <p className="md:mx-[5.7rem] text-justify text-gray-500">The Magic Box is not just a screen protector; it&apos;s a shield of innovation. Using
 
@@ -64,8 +71,8 @@ const AbtProduct = () => {
 
                             impacts, and daily wear and tear, all while maintaining the crystal-clear visual
                             experience you love.</p>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </div>
         </div>
     );
